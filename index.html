@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    
+    <title>ExcelClone
+</title>
+</head>
+<body>
+    <div class="excel-container"> 
+        
+        <div class="title">Excel Clone
+        </div>
+        <div class="menu-container">
+            <div class="menu-bar">
+                <div class="major-font-container">
+                    <select class="font-size">
+                        <option value="12">12</option>
+                        <option value="14">14</option>
+                        <option value="16">16</option>
+                        <option value="18">18</option>
+                    </select>
+    
+                    <select class="font-family">
+                        <option value="monospace">Monospace</option>
+                        <option value="sans-serif">Sans-serif</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="cursive">Cursive</option>
+                    </select>
+                </div>
+                <div class="major-text-property">
+                    <div class="text-property">
+                        <i class="fas fa-bold bold"></i>
+                        <i class="fas fa-underline underline"></i>
+                        <i class="fas fa-italic italic"></i>
+                    </div>
+                    <div class="text-alignment">
+                        <i class="left align fas fa-align-left"></i>
+                        <i class="center align fas fa-align-center"></i>
+                        <i class="right align fas fa-align-right"></i>
+                    </div>
+                </div>
+                <div class="major-color-nos">
+                    <div class="color-palette">
+                        <i class="fas fa-paint-roller color">
+                            <input type="color" class="color-tag" value="#000000">
+                        </i>
+                        <i class="fas fa-fill-drip background-color">
+                            <input type="color" class="bg-color-tag" value="#000000">
+                        </i>
+                    </div>
+                    <div class="nos-container">
+                        
+                        <i class="fas fa-folder open"></i>
+                        <i class="fas fa-save download"></i>
+                        <div class="menu-icon"><span class="material-icons menu-icon" id="cut">content_cut</span></div>
+                        <div class="menu-icon"><span class="material-icons menu-icon" id="copy">content_copy</span></div>
+                        <div class="menu-icon"><span class="material-icons menu-icon" id="paste">content_paste</span></div>
+                        
+                    </div>
+                </div>
+                <div class="major-trace-container">
+                    <div class="trace-container">
+                        <i class="fas fa-directions trace-path"></i>
+                        <i class="fas fa-infinity cycle-path"></i>
+                    </div>
+                </div>   
+            </div>
+        </div>
+
+        <div class="formula-wrapper">
+            <div class="formula-container">
+                <input type="text" class="address-bar" readonly>
+                <input type="text" class="formula-bar">
+            </div>
+        </div>
+
+        <div class="grid-container">
+            <div class="top-left-box box"></div>
+            <div class="major-row-box">
+                <div class="top-row row"></div>
+            </div>
+            <div class="left-col"></div>
+            <div class="grid"></div>
+        </div>
+
+        <div class="sheets-container">
+            <div class="add-sheets-btn-container">
+                <div class="icon-box">
+                    <span class="material-icons-outlined material-icons">post_add</span>
+                </div>
+            </div>
+            <div class="sheets-list-container">
+                <div class="sheet">
+                    <div class="perspective">
+                        <div class="sheet-content">Sheet1</div>
+                        <div class="sheet-display active" id="0"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="grid.js"></script>
+    <script src="cut.js"></script>
+    <script src="cyclicGraphValidation.js"></script>
+    <script src="infix.js"></script>
+    <script src="pathTrace.js"></script>
+    <script src="formula.js"></script>
+    <script src="newOpenSave.js"></script>
+</body>
+</html>
